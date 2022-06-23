@@ -1,0 +1,327 @@
+1) Создайте текстовый файл
+
+2) Сценарий перенесите в файл
+
+3) На против каждого действия напишите команду в Terminal (GitBash)
+
+
+
+JSON
+
+4) Создать внешний репозиторий с названием JSON
+В GitHub в аккаунте во вкладке "Your repositories" через кнопку "New" создаем новый репозиторий с названием JSON
+
+5) Клонировать репозиторий JSON на локальный компьютер
+В терминале git clone SSH (SSH с репозитория JSON в GitHub)
+
+6) Внутри локального JSON создать файл "new.json"
+В терминале cd JSON (переходим в папку JSON)
+touch new.json (создаем файл)
+git status
+
+7) Добавить файл под гит
+git add new.json
+git status
+
+8) Закоммитить файл
+git commit -m "creating a new file in json format"
+
+9) Отправить файл на внешний GitHub репозиторий
+git push
+
+10) Отредактировать содержание файла "new.json" - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Все написать в формате JSON
+vim new.json
+вводим и сохраняем:
+{
+
+	"lastName" : "Mikhailov" ,
+	"firstName" : "Sergei" ,
+	"middleName" : "Anatolevich" ,
+	"age" : 40 ,
+	"pets" : 0 ,
+	"salary" : [
+		 1000 ,
+		 "$"
+	]
+}
+
+11) Отправить изменения на внешний репозиторий
+git status
+git add new.json
+git status
+git commit -m "first file change"
+git push
+
+12) Создать файл preferences.json
+touch preferences.json
+
+13) В файл preferences.json добавить информацию о своих предпочтениях (любимый фильм, любимый сериал, любимая еда, любимое время года, страна, которую хотели бы посетить) в формате JSON
+vim preferences.json
+вводим и сохраняем:
+{
+	"favorite movie" : "The Social Network" ,
+	"favorite show" : "Silicon Valley" ,
+	"favorite food" : "pizza" ,
+	"favorite time of the year" : "spring" ,
+	"the country you would like to visit" : "USA"
+}
+
+14) Создать файл skills.json, добавить информацию о скиллах, которые будут изучены на курсе в формате JSON
+touch skills.json
+vim skills.json
+вводим и сохраняем:
+{
+	"skills" : [
+		"soft skills" ,
+		"hard skills"
+	] 
+}
+
+15) Отправить сразу 2 файла на внешний репозиторий
+git status
+git add .
+git status
+git commit -m "adding two files"
+git push
+
+16) На веб интерфейсе создать файл bug_report.json
+В GitHub в репозитории JSON нажимаем на кнопку "Add file"
+выбираем из списка "Create new file"
+вводим имя файла bag_report.json
+
+17) Сделать Commit changes (сохранить) изменения на веб интерфейсе
+сохраняем через кнопку "Commit new file"
+
+18) На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON
+В GitHub в репозитории JSON нажимаем на имя файла bag_report.json
+далее нажимаем на кнопку "Edit this file"
+вводим:
+{
+	"ID" : "Присваивается автоматически системой при создании баг-репорта" ,
+	"Summary" : "Кратко сформулированный смысл дефекта, отвечающий на вопросы: Что? Где? Когда (при каких обстоятельствах)?" ,
+	"Steps to reproduce" : "Описание четкой последовательности действий, которая привела к выявлению дефекта. Описывается каждый шаг, вплоть до вводимых значений, играющих роль в воспроизведении дефекта" ,
+	"Actual result" : "Описывается поведение системы на момент обнаружения дефекта в ней. Чаще всего, содержит краткое описание некорректного поведения" ,
+	"Expected result" : "Описание того как должна работать система в соответствии с документацией" ,
+	"Attachments" : "Скриншоты, видео или лог-файлы" ,
+	"Severity" : "Характеризует влияние дефекта на работоспособность приложения. Подразделяют на Blocker, Critical, Major, Minor, Trivial" ,
+	"Priority" : "Указывает на очередность выполнения задачи или устранения дефекта. Подразделяется на High, Medium, Low " ,
+	"Status" : "Определяет текущее состояние дефекта" ,
+	"Environment" : "Окружение, на котором воспроизвелся баг"
+}
+в строке "Add an optional extended discription" вводим текст "first file change"
+
+19) Сделать Commit changes (сохранить) изменения на веб интерфейсе
+сохраняем, нажав на кнопку "Commit changes"
+
+20) Синхронизировать внешний и локальный репозиторий JSON
+git fetch
+git pull
+
+
+
+XML
+
+21) Создать внешний репозиторий с названием XML
+В GitHub в аккаунте во вкладке "Your repositories" через кнопку "New" создаем новый репозиторий с названием XML
+
+22) Клонировать репозиторий XML на локальный компьютер
+В терминале git clone SSH (SSH с репозитория XML в GitHub)
+
+23) Внутри локального XML создать файл "new.xml"
+В терминале cd XML (переходим в папку XML)
+touch new.xml (создаем файл)
+git status
+
+24) Добавить файл под Гит
+git add new.xml
+git status
+
+25) Закоммитить файл
+git commit -m "creating a new file in xml format"
+
+26) Отправить файл на внешний GitHub репозиторий
+git push
+
+27) Отредактировать содержание файла "new.xml" - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарпалата). Все написать в формате XML
+vim new.xml
+вводим и сохраняем:
+<info>
+	<lastName>Mikhailov</lastName>
+	<firstName>Sergei</firstName>
+	<middleName>Anatolevich</middleName>
+	<age>40</age>
+	<pets>0</pets>
+	<salary>1000 $</salary>
+</info>
+
+28) Отправить изменения на внешний репозиторий
+git status
+git add new.xml
+git status
+git commit -m "first file change"
+git push
+
+29) Создать файл preferences.xml
+touch preferences.xml
+
+30) В файл preferences.xml добавить информацию о своих предпочтениях (любимый фильм, любимый сериал, любимая еда, любимое время года, страна, которую хотели бы посетить) в формате XML
+vim preferences.json
+вводим и сохраняем:
+<info>
+	<favorite_movie>The Social Network</favorite_movie>
+	<favorite_show>Silicon Valley</favorite_show>
+	<favorite_food>pizza</favorite_food>
+	<favorite_time_of_the_year>spring</favorite_time_of_the_year>
+	<the_country_you_would_like_to_visit>USA</the_country_you_would_like_to_visit>
+</info>
+
+31) Создать файл skills.xml, добавить информацию о скиллах, которые будут изучены на курсе в формате XML
+touch skills.xml
+vim skills.xml
+вводим и сохраняем:
+<info>
+	<skills>soft skills hard skills</skills>
+</info>
+
+32) Сделать коммит в одну строку
+git status
+git add .
+git status
+git commit -m "adding two files"
+
+33) Отправить сразу 2 файла на внешний репозиторий
+git push
+
+34) На веб интерфейсе создать файл bug_report.xml
+В GitHub в репозитории XML нажимаем на кнопку "Add file"
+выбираем из списка "Create new file"
+вводим имя файла bag_report.xml
+
+35) Сделать Commit changes (сохранить) изменения на веб интерфейсе
+сохраняем через кнопку "Commit new file"
+
+36) На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML
+В GitHub в репозитории XML нажимаем на имя файла bag_report.xml
+далее нажимаем на кнопку "Edit this file"
+вводим:
+<report>
+	<ID>Присваивается автоматически системой при создании баг-репорта</ID>
+	<Summary>Кратко сформулированный смысл дефекта, отвечающий на вопросы: Что? Где? Когда (при каких обстоятельствах)?</Summary>
+	<Steps_to_reproduce>Описание четкой последовательности действий, которая привела к выявлению дефекта. Описывается каждый шаг, вплоть до вводимых значений, играющих роль в воспроизведении дефекта</Steps_to_reproduce>
+	<Actual_result>Описывается поведение системы на момент обнаружения дефекта в ней. Чаще всего, содержит краткое описание некорректного поведения</Actual_result>
+	<Expected_result>Описание того как должна работать система в соответствии с документацией</Expected_result>
+	<Attachments>Скриншоты, видео или лог-файлы</Attachments>
+	<Severity>Характеризует влияние дефекта на работоспособность приложения. Подразделяют на Blocker, Critical, Major, Minor, Trivial</Severity>
+	<Priority>Указывает на очередность выполнения задачи или устранения дефекта. Подразделяется на High, Medium, Low</Priority>
+	<Status>Определяет текущее состояние дефекта</Status>
+	<Environment>Окружение, на котором воспроизвелся баг</Environment>
+</report>
+в строке "Add an optional extended discription" вводим текст "first file change",
+
+37) Сделать Commit changes (сохранить) изменения на веб интерфейсе
+сохраняем, нажав на кнопку "Commit changes"
+
+38) Синхронизировать внешний и локальный репозиторий XML
+git fetch
+git pull
+
+
+
+TXT
+
+1) Создать внешний репозиторий с названием TXT
+В GitHub в аккаунте во вкладке "Your repositories" через кнопку "New" создаем новый репозиторий с названием TXT
+
+2) Клонировать репозиторий TXT на локальный компьютер
+В терминале git clone SSH (SSH с репозитория TXT в GitHub)
+
+3) Внутри локального TXT создать файл "new.txt"
+В терминале cd TXT (переходим в папку TXT),
+touch new.txt (создаем файл)
+git status
+
+4) Добавить файл под Гит
+git add new.txt
+git status
+
+5) Закоммитить файл
+git commit -m "creating a new file in txt format"
+
+6) Отправить файл на внешний GitHub репозиторий
+git push
+
+7) Отредактировать содержание файла "new.txt" - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарпалата). Все написать в формате TXT
+vim new.txt
+вводим и сохраняем:
+lastName: Mikhailov,
+firstName: Sergei,
+middleName: Anatolevich,
+age: 40,
+pets: 0,
+salary: 1000$
+
+8) Отправить изменения на внешний репозиторий
+git status
+git add new.txt
+git status
+git commit -m "first file change"
+git push
+
+9) Создать файл preferences.txt
+touch preferences.txt
+
+10) В файл preferences.txt добавить информацию о своих предпочтениях (любимый фильм, любимый сериал, любимая еда, любимое время года, страна, которую хотели бы посетить) в формате TXT
+vim preferences.txt
+вводим и сохраняем:
+favorite movie: The Social Network,
+favorite show: Silicon Valley,
+favorite food: pizza,
+favorite time of the year: spring,
+the country you would like to visit: USA
+
+11) Создать файл skills.txt, добавить информацию о скиллах, которые будут изучены на курсе в формате TXT
+touch skills.txt
+vim skills.txt
+вводим и сохраняем:
+skills: soft skills, hard skills
+
+12) Сделать коммит в одну строку
+git status
+git add .
+git status
+git commit -m "adding two files"
+
+13) Отправить сразу 2 файла на внешний репозиторий
+git push
+
+14) На веб интерфейсе создать файл bug_report.txt
+В GitHub в репозитории TXT нажимаем на кнопку "Add file"
+выбираем из списка "Create new file"
+вводим имя файла bag_report.txt
+
+15) Сделать Commit changes (сохранить) изменения на веб интерфейсе
+сохраняем через кнопку "Commit new file"
+
+16) На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT
+В GitHub в репозитории TXT нажимаем на имя файла bag-report.txt
+далее нажимаем на кнопку "Edit this file"
+вводим:
+ID: Присваивается автоматически системой при создании баг-репорта.
+Summary: Кратко сформулированный смысл дефекта, отвечающий на вопросы: Что? Где? Когда (при каких обстоятельствах)?
+Steps to reproduce: Описание четкой последовательности действий, которая привела к выявлению дефекта. Описывается каждый шаг, вплоть до вводимых значений, играющих роль в воспроизведении дефекта.
+Actual result: Описывается поведение системы на момент обнаружения дефекта в ней. Чаще всего, содержит краткое описание некорректного поведения.
+Expected result: Описание того как должна работать система в соответствии с документацией.
+Attachments: Скриншоты, видео или лог-файлы.
+Severity: Характеризует влияние дефекта на работоспособность приложения. Подразделяют на Blocker, Critical, Major, Minor, Trivial.
+Priority: Указывает на очередность выполнения задачи или устранения дефекта. Подразделяется на High, Medium, Low.
+Status: Определяет текущее состояние дефекта.
+Environment: Окружение, на котором воспроизвелся баг.
+
+в строке "Add an optional extended discription" вводим текст "first file change"
+
+17) Сделать Commit changes (сохранить) изменения на веб интерфейсе
+сохраняем, нажав на кнопку "Commit changes"
+
+18) Синхронизировать внешний и локальный репозиторий TXT
+git fetch
+git pull
