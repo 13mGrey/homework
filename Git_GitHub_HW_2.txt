@@ -1,0 +1,88 @@
+1. На локальном репозитории сделать ветки для:
+Создаем новый репозиторий на GitHub в аккаунте во вкладке "Your repositories" через кнопку "New" с названием Branches
+В терминале git clone SSH (SSH с репозитория Branches в GitHub) - клонируем удаленный репозиторий
+
+- Postman
+git branch Postman
+
+- Jmeter
+git branch Jmeter
+
+- CheckLists
+git branch CheckLists
+
+- Bag_Reports
+git branch Bag_Reports
+
+- SQL
+git branch SQL
+
+- Charles
+git branch Charles
+
+- Mobile_testing
+git branch Mobile_testing
+
+2. Запушить все ветки на внешний репозиторий
+git push -u --all
+или
+git push -u origin --all
+
+3. В ветке Bag_Reports сделать текстовый документ со структурой баг-репорта
+git checkout Bag_Reports
+cat > Structure_bag_reports.txt
+вводим текст и сохраняем:
+ID
+Summary
+Steps to reproduce
+Actual result
+Expected result
+Attachments
+Severity
+Priority
+Status
+Environment
+
+4. Запушить структуру баг-репорта на внешний репозиторий
+git status
+git add Structure_bag_reports.txt
+git status
+git commit -m "adding txt file"
+git push
+
+5. Вмержить ветку Bag_Reports в Main
+git checkout main
+git merge Bag_Reports -m "merge Bag_Reports"
+
+6. Запушить Main на внешний репозиторий
+git status
+git push
+
+7. В ветке CheckLists набросать структуру чек-листа
+git checkout CheckLists
+cat > Structure_checklists.txt
+вводим текст и сохраняем:
+ID
+Check
+Exemple
+Result
+
+8. Запушить структуру на внешний репозиторий
+git status
+git add Structure_bag_reports.txt
+git status
+git commit -m "adding txt file"
+git push
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в Main
+В GitHub обновляемся на ветке CheckLists.
+Нажимаем кнопку через "Pull requests".
+В появившейся строке нажимаем на зеленую кнопку "Compare & pull request".
+Далее нажимаем на зеленую кнопку "Commit merge".
+Затем на кнопку "Confirm merge" 
+
+10. Синхронизировать внешнюю и локальную ветки Main
+В терминале вводим команды
+git checkout main
+git fetch
+git pull
